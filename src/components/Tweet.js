@@ -10,13 +10,13 @@ const Tweet = ({name, tweet,tweets,setTweets }) => {
   //! Delete Function
   
   const deleteTweet = () => { 
-    setTweets(tweets.filter((t)=> t !== tweet));
+    setTweets(tweets.filter((state)=> state.id !== tweet.id));
   }
 
   return (
     <div className='App'>
       <h1> Name :{name} </h1>
-      <h3>{tweet}</h3>
+      <h3>{tweet.message}</h3>
       <button onClick={deleteTweet}>Delete</button>
       <button>Like</button>
     </div>
