@@ -1,10 +1,22 @@
 import React from 'react';
 import '../App.css';
-const CreateTweet = () => {
+const CreateTweet = ({tweets,setTweets,textInput,setTextInput}) => {
+
+//? Functions
+ const userInputHandler = (e) =>{
+ setTextInput(e.target.value);
+}
+
+const submitTweetHandler = (e) =>
+{
+    e.preventDefault();
+    setTweets([...tweets,textInput])
+    setTextInput("");
+}
   return (
     <div className='App'>
-      <form>
-       <textarea cols="60" rows="5" ></textarea>
+      <form onSubmit={submitTweetHandler}>
+       <textarea onChange={userInputHandler} value={textInput} cols="60" rows="5" ></textarea>
        <div>
        <button> Submit </button>
        </div>
