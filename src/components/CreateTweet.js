@@ -21,7 +21,7 @@ const submitTweetHandler = (e) =>
       <form onSubmit={submitTweetHandler}>
        <textarea onChange={userInputHandler} value={textInput} cols="60" rows="5" ></textarea>
        <div>
-       <button> Submit </button>
+       <button> Tweet🔥 </button>
        </div>
       </form>
     </div>

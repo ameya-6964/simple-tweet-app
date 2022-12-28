@@ -3,10 +3,6 @@ import '../App.css';
 
 const Tweet = ({name, tweet,tweets,setTweets }) => {
 
-  /* console.log(name)
-  console.log(tweet)
-  console.log(tweets)
-  console.log(setTweets) */
   //! Delete Function
   
   const deleteTweet = () => { 
@@ -15,8 +11,8 @@ const Tweet = ({name, tweet,tweets,setTweets }) => {
 
   return (
     <div className='App'>
-      <h1> Name :{name} </h1>
-      <h3>{tweet.message}</h3>
+      <h2>{tweet.message}</h2>
+      <h4> Twitted By {name} </h4>
       <button onClick={deleteTweet}>Delete</button>
       <button>Like</button>
     </div>
