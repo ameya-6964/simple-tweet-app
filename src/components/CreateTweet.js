@@ -20,7 +20,7 @@ const submitTweetHandler = (e) =>
   return (
     <div className='App'>
       <form onSubmit={submitTweetHandler}>
-       <textarea onChange={userInputHandler} value={textInput} cols="60" rows="5" ></textarea>
+       <textarea className='text-area' onChange={userInputHandler} value={textInput} cols="60" rows="5" ></textarea>
        <div>
        <button> Tweet🔥 </button>
        </div>

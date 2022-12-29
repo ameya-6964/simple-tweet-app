@@ -2,6 +2,9 @@ import React from 'react';
 import '../App.css';
 
 const Tweet = ({name, tweet,tweets,setTweets }) => {
+const t = {color:'blue'}
+const h = {color:'red'}
+const background ={background:'lightgrey'}
 
   //! For Deleting Tweet
   
@@ -10,11 +13,11 @@ const Tweet = ({name, tweet,tweets,setTweets }) => {
   }
 
   return (
-    <div className='App'>
-      <h2>{tweet.message}</h2>
-      <h4> Twitted By {name} </h4>
-      <button onClick={deleteTweet}>Delete</button>
-      <button>Like</button>
+    <div className='App border' style={background}>
+      <h2 style={t} >{tweet.message}</h2>
+      <h4 style={h}> Twitted By {name} </h4>
+      <button onClick={deleteTweet}>Delete ❌</button>
+      <button>Like 👍</button>
     </div>
   );
 }

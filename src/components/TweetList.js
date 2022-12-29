@@ -8,6 +8,7 @@ const TweetList = ({name,tweets,setTweets}) => {
     <div className='tweet-list'> 
     
     {/*//! For Creating Individual Tweets*/}
+
      {tweets.map((tweet) => (
       <Tweet setTweets={setTweets} name={name} tweet={tweet} tweets={tweets} key={tweet.id} />
      )) }
