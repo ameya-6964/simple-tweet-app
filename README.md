@@ -1,3 +1,8 @@
+This Site Is Deployed Live On https://simple-tweet-app.netlify.app
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9ad621b6-4cc5-4e9f-ac44-24f78ad02938/deploy-status)](https://app.netlify.com/sites/simple-tweet-app/deploys)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
