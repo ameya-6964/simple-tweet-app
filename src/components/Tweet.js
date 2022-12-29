@@ -3,7 +3,7 @@ import '../App.css';
 
 const Tweet = ({name, tweet,tweets,setTweets }) => {
 
-  //! Delete Function
+  //! For Deleting Tweet
   
   const deleteTweet = () => { 
     setTweets(tweets.filter((state)=> state.id !== tweet.id));

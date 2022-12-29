@@ -5,11 +5,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 const CreateTweet = ({tweets,setTweets,textInput,setTextInput}) => {
 
-//? Functions
+//! For Getting Text From Text Area
  const userInputHandler = (e) =>{
  setTextInput(e.target.value);
 }
 
+//! For Adding Tweets After Clicking Submit Button
 const submitTweetHandler = (e) =>
 {
     e.preventDefault();
