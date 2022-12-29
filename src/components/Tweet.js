@@ -4,7 +4,7 @@ import '../App.css';
 const Tweet = ({name, tweet,tweets,setTweets }) => {
 const t = {color:'blue'}
 const h = {color:'red'}
-const background ={background:'lightgrey'}
+const background ={background:'antiquewhite'}
 
   //! For Deleting Tweet
   
